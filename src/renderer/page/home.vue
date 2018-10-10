@@ -23,7 +23,7 @@
                     <div class="album" v-for="album in recommendList" :key="album.id">
                         <img class="album-img" :src="album.picUrl" alt="">
                         <div class="album-name" :title="album.name">{{album.name}}</div>
-						<div class="album-name">{{album.trackCount}} Songs</div>
+						<div class="album-trackCount">{{album.trackCount}} Songs</div>
                     </div>
                 </div>
 			</div>
@@ -189,15 +189,22 @@
 			cursor: pointer;
 		}
 	}
-	.album-name{
+	.album-name, .album-trackCount{
         width: 100%;
 		margin-top: 8px;
 		margin-bottom: 8px;
         overflow: hidden;
         white-space: nowrap;
 		text-overflow: ellipsis;
-		color:#333;
+		colr: #111;
 	}
+    .album-name{
+        font-size: 14px;
+        color: #000;
+    }
+    .album-trackCount{
+        font-weight: 700;
+    }
 	.album-img{
 		width: 160px;
 		height: 160px;
