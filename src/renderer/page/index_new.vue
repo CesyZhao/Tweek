@@ -60,10 +60,13 @@
 	}
 	.dragger{
 		position: relative;
-		z-index: 9;
 		background: transparent;
+		z-index: 999;
 		width: 100%;
 		height: 16px;
-		 -webkit-app-region: drag;
+		-webkit-app-region: drag;
+		&:hover{
+			cursor: pointer;
+		}
 	}
 </style>

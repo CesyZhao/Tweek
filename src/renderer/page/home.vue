@@ -19,16 +19,11 @@
                     <span>Playlist</span>
                     <i class="el-icon-menu"></i>
                 </div>
-				 <!--<swiper class="swiper" :options="swiperOption">
-                    <swiper-slide class="album" v-for="album in recommendList" :key="album.id" @click.native="goPlaylist(album.id)">
-                        <img class="album-img" :src="album.picUrl" alt="">
-                        <div class="album-name">{{album.name}}</div>
-                    </swiper-slide>
-                </swiper>-->
                 <div class="item-wrapper">
                     <div class="album" v-for="album in recommendList" :key="album.id">
                         <img class="album-img" :src="album.picUrl" alt="">
-                        <div class="album-name">{{album.name}}</div>
+                        <div class="album-name" :title="album.name">{{album.name}}</div>
+						<div class="album-name">{{album.trackCount}} Songs</div>
                     </div>
                 </div>
 			</div>
@@ -67,6 +62,7 @@
 			this.$http.get('/personalized')
 				.then(res => {
 					this.recommendList = res.data.result;
+					console.log(this.recommendList, '------')
 					this.loading = false;
 				})
 		},
@@ -80,11 +76,6 @@
 		z-index: 8;
 		top: 0;
 		width: 100%;
-		/*margin-top: 64px;*/
-		/*padding: 0 16px;*/
-		/*display: flex;
-		justify-content: space-around;
-		flex-direction: column;*/
 		color:#fff;
 	}
 	.background{
@@ -193,6 +184,7 @@
 	.album{
         width: 160px;
 		font-size: 12px;
+		margin-bottom: 12px;
 		&:hover{
 			cursor: pointer;
 		}
@@ -200,6 +192,7 @@
 	.album-name{
         width: 100%;
 		margin-top: 8px;
+		margin-bottom: 8px;
         overflow: hidden;
         white-space: nowrap;
 		text-overflow: ellipsis;
