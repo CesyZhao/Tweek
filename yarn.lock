@@ -285,7 +285,7 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.16.7", "@babel/parser@^7.17.0":
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.16.7", "@babel/parser@^7.17.0", "@babel/parser@^7.7.0":
   version "7.17.0"
   resolved "http://registry.npm.qima-inc.com/@babel/parser/download/@babel/parser-7.17.0.tgz#f0ac33eddbe214e4105363bb17c3341c5ffcc43c"
   integrity sha1-8Kwz7dviFOQQU2O7F8M0HF/8xDw=
@@ -1040,7 +1040,7 @@
     "@babel/parser" "^7.16.7"
     "@babel/types" "^7.16.7"
 
-"@babel/traverse@^7.13.0", "@babel/traverse@^7.16.7", "@babel/traverse@^7.16.8", "@babel/traverse@^7.17.0", "@babel/traverse@^7.7.2":
+"@babel/traverse@^7.13.0", "@babel/traverse@^7.16.7", "@babel/traverse@^7.16.8", "@babel/traverse@^7.17.0", "@babel/traverse@^7.7.0", "@babel/traverse@^7.7.2":
   version "7.17.0"
   resolved "http://registry.npm.qima-inc.com/@babel/traverse/download/@babel/traverse-7.17.0.tgz#3143e5066796408ccc880a33ecd3184f3e75cd30"
   integrity sha1-MUPlBmeWQIzMiAoz7NMYTz51zTA=
@@ -1056,7 +1056,7 @@
     debug "^4.1.0"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.12.6", "@babel/types@^7.16.0", "@babel/types@^7.16.7", "@babel/types@^7.16.8", "@babel/types@^7.17.0", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4":
+"@babel/types@^7.0.0", "@babel/types@^7.12.6", "@babel/types@^7.16.0", "@babel/types@^7.16.7", "@babel/types@^7.16.8", "@babel/types@^7.17.0", "@babel/types@^7.3.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4", "@babel/types@^7.7.0":
   version "7.17.0"
   resolved "http://registry.npm.qima-inc.com/@babel/types/download/@babel/types-7.17.0.tgz#a826e368bccb6b3d84acd76acad5c0d87342390b"
   integrity sha1-qCbjaLzLaz2ErNdqytXA2HNCOQs=
@@ -2438,6 +2438,18 @@ axobject-query@^2.2.0:
   resolved "http://registry.npm.qima-inc.com/axobject-query/download/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
   integrity sha1-lD1H4QwLcEqkInXiDt83ImSJib4=
 
+babel-eslint@^10.1.0:
+  version "10.1.0"
+  resolved "http://registry.npm.qima-inc.com/babel-eslint/download/babel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
+  integrity sha1-aWjlaKkQt4+zd5zdi2rC9HmUMjI=
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/parser" "^7.7.0"
+    "@babel/traverse" "^7.7.0"
+    "@babel/types" "^7.7.0"
+    eslint-visitor-keys "^1.0.0"
+    resolve "^1.12.0"
+
 babel-jest@^27.4.2, babel-jest@^27.4.6:
   version "27.4.6"
   resolved "http://registry.npm.qima-inc.com/babel-jest/download/babel-jest-27.4.6.tgz#4d024e69e241cdf4f396e453a07100f44f7ce314"
@@ -3019,6 +3031,20 @@ concat-stream@^1.6.2:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+concurrently@^7.0.0:
+  version "7.0.0"
+  resolved "http://registry.npm.qima-inc.com/concurrently/download/concurrently-7.0.0.tgz#78d31b441cec338dab03316c221a2f9a67c529b0"
+  integrity sha1-eNMbRBzsM42rAzFsIhovmmfFKbA=
+  dependencies:
+    chalk "^4.1.0"
+    date-fns "^2.16.1"
+    lodash "^4.17.21"
+    rxjs "^6.6.3"
+    spawn-command "^0.0.2-1"
+    supports-color "^8.1.0"
+    tree-kill "^1.2.2"
+    yargs "^16.2.0"
+
 config-chain@^1.1.11:
   version "1.1.13"
   resolved "http://registry.npm.qima-inc.com/config-chain/download/config-chain-1.1.13.tgz#fad0795aa6a6cdaff9ed1b68e9dff94372c232f4"
@@ -3344,6 +3370,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.16.1:
+  version "2.28.0"
+  resolved "http://registry.npm.qima-inc.com/date-fns/download/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha1-lXDWVvX8ExQ+UMl1o7a760bNCLI=
 
 debug@2.6.9, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -3963,6 +3994,11 @@ eslint-utils@^3.0.0:
   integrity sha1-iuuvrOc0W7M1WdsKHxOh0tSMNnI=
   dependencies:
     eslint-visitor-keys "^2.0.0"
+
+eslint-visitor-keys@^1.0.0:
+  version "1.3.0"
+  resolved "http://registry.npm.qima-inc.com/eslint-visitor-keys/download/eslint-visitor-keys-1.3.0.tgz#30ebd1ef7c2fdff01c3a4f151044af25fab0523e"
+  integrity sha1-MOvR73wv3/AcOk8VEESvJfqwUj4=
 
 eslint-visitor-keys@^2.0.0, eslint-visitor-keys@^2.1.0:
   version "2.1.0"
@@ -7291,61 +7327,6 @@ react-refresh@^0.11.0:
   resolved "http://registry.npm.qima-inc.com/react-refresh/download/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha1-dxmLlEcz8PHxqQ55HeRUH58HQEY=
 
-react-scripts@5.0.0:
-  version "5.0.0"
-  resolved "http://registry.npm.qima-inc.com/react-scripts/download/react-scripts-5.0.0.tgz#6547a6d7f8b64364ef95273767466cc577cb4b60"
-  integrity sha1-ZUem1/i2Q2TvlSc3Z0ZsxXfLS2A=
-  dependencies:
-    "@babel/core" "^7.16.0"
-    "@pmmmwh/react-refresh-webpack-plugin" "^0.5.3"
-    "@svgr/webpack" "^5.5.0"
-    babel-jest "^27.4.2"
-    babel-loader "^8.2.3"
-    babel-plugin-named-asset-import "^0.3.8"
-    babel-preset-react-app "^10.0.1"
-    bfj "^7.0.2"
-    browserslist "^4.18.1"
-    camelcase "^6.2.1"
-    case-sensitive-paths-webpack-plugin "^2.4.0"
-    css-loader "^6.5.1"
-    css-minimizer-webpack-plugin "^3.2.0"
-    dotenv "^10.0.0"
-    dotenv-expand "^5.1.0"
-    eslint "^8.3.0"
-    eslint-config-react-app "^7.0.0"
-    eslint-webpack-plugin "^3.1.1"
-    file-loader "^6.2.0"
-    fs-extra "^10.0.0"
-    html-webpack-plugin "^5.5.0"
-    identity-obj-proxy "^3.0.0"
-    jest "^27.4.3"
-    jest-resolve "^27.4.2"
-    jest-watch-typeahead "^1.0.0"
-    mini-css-extract-plugin "^2.4.5"
-    postcss "^8.4.4"
-    postcss-flexbugs-fixes "^5.0.2"
-    postcss-loader "^6.2.1"
-    postcss-normalize "^10.0.1"
-    postcss-preset-env "^7.0.1"
-    prompts "^2.4.2"
-    react-app-polyfill "^3.0.0"
-    react-dev-utils "^12.0.0"
-    react-refresh "^0.11.0"
-    resolve "^1.20.0"
-    resolve-url-loader "^4.0.0"
-    sass-loader "^12.3.0"
-    semver "^7.3.5"
-    source-map-loader "^3.0.0"
-    style-loader "^3.3.1"
-    tailwindcss "^3.0.2"
-    terser-webpack-plugin "^5.2.5"
-    webpack "^5.64.4"
-    webpack-dev-server "^4.6.0"
-    webpack-manifest-plugin "^4.0.2"
-    workbox-webpack-plugin "^6.4.1"
-  optionalDependencies:
-    fsevents "^2.3.2"
-
 react@^17.0.2:
   version "17.0.2"
   resolved "http://registry.npm.qima-inc.com/react/download/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
@@ -7528,7 +7509,7 @@ resolve.exports@^1.1.0:
   resolved "http://registry.npm.qima-inc.com/resolve.exports/download/resolve.exports-1.1.0.tgz#5ce842b94b05146c0e03076985d1d0e7e48c90c9"
   integrity sha1-XOhCuUsFFGwOAwdphdHQ5+SMkMk=
 
-resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.21.0:
+resolve@^1.12.0, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.21.0:
   version "1.22.0"
   resolved "http://registry.npm.qima-inc.com/resolve/download/resolve-1.22.0.tgz#5e0b8c67c15df57a89bdbabe603a002f21731198"
   integrity sha1-XguMZ8Fd9XqJvbq+YDoALyFzEZg=
@@ -7604,6 +7585,13 @@ run-parallel@^1.1.9:
   integrity sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=
   dependencies:
     queue-microtask "^1.2.2"
+
+rxjs@^6.6.3:
+  version "6.6.7"
+  resolved "http://registry.npm.qima-inc.com/rxjs/download/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
+  integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
+  dependencies:
+    tslib "^1.9.0"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
@@ -7919,6 +7907,11 @@ sourcemap-codec@^1.4.4:
   resolved "http://registry.npm.qima-inc.com/sourcemap-codec/download/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=
 
+spawn-command@^0.0.2-1:
+  version "0.0.2-1"
+  resolved "http://registry.npm.qima-inc.com/spawn-command/download/spawn-command-0.0.2-1.tgz#62f5e9466981c1b796dc5929937e11c9c6921bd0"
+  integrity sha1-YvXpRmmBwbeW3Fkpk34RycaSG9A=
+
 spdy-transport@^3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.qima-inc.com/spdy-transport/download/spdy-transport-3.0.0.tgz#00d4863a6400ad75df93361a1608605e5dcdcf31"
@@ -8137,7 +8130,7 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-color@^8.0.0:
+supports-color@^8.0.0, supports-color@^8.1.0:
   version "8.1.1"
   resolved "http://registry.npm.qima-inc.com/supports-color/download/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
   integrity sha1-zW/BfihQDP9WwbhsCn/UpUpzAFw=
@@ -8357,6 +8350,11 @@ tr46@^2.1.0:
   dependencies:
     punycode "^2.1.1"
 
+tree-kill@^1.2.2:
+  version "1.2.2"
+  resolved "http://registry.npm.qima-inc.com/tree-kill/download/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
+  integrity sha1-TKCakJLIi3OnzcXooBtQeweQoMw=
+
 tryer@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.qima-inc.com/tryer/download/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
@@ -8372,7 +8370,7 @@ tsconfig-paths@^3.12.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.8.1:
+tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "http://registry.npm.qima-inc.com/tslib/download/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=

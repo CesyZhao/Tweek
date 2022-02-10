@@ -9,9 +9,3 @@ export const ShortCutKeyMap = new Map([
 	[ShortCutKey.MediaPreviousTrack, 'prev'],
 	[ShortCutKey.MediaPlayPause, 'togglePlaying'],
 ])
-
-export const ShortCutKeyConfig = [
-	ShortCutKey.MediaNextTrack,
-	ShortCutKey.MediaPreviousTrack,
-	ShortCutKey.MediaPlayPause
-].map(key => { key: ShortCutKeyMap.get(key) })

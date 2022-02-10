@@ -1,7 +1,7 @@
 // Modules to control application life and create native browser window
-import {app, BrowserWindow, globalShortcut, BrowserWindowConstructorOptions} from 'electron';
 import {ShortCutKeyMap} from '../constants';
-const os = require('os')
+const {app, BrowserWindow, globalShortcut, BrowserWindowConstructorOptions} = require('electron');
+const os = require('os');
 const path = require('path')
 const url = require('url')
 
